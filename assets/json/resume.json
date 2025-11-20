@@ -39,9 +39,7 @@
       "startDate": "2025-08-01",
       "endDate": null,
       "summary": "Vision Technology Department research intern on video generation.",
-      "highlights": [
-        "Video generation research for multi-view consistent content."
-      ]
+      "highlights": ["Video generation research for multi-view consistent content."]
     },
     {
       "name": "Texas A&M University",
@@ -52,9 +50,7 @@
       "startDate": "2025-05-01",
       "endDate": "2025-08-01",
       "summary": "Research Assistant on 3D vision and embodied intelligence.",
-      "highlights": [
-        "Advisor: Prof. Zhiwen Fan."
-      ]
+      "highlights": ["Advisor: Prof. Zhiwen Fan."]
     },
     {
       "name": "VITA Group, University of Texas at Austin",
@@ -65,9 +61,7 @@
       "startDate": "2024-01-01",
       "endDate": "2025-05-01",
       "summary": "Research Assistant on 3D spatial reconstruction and understanding.",
-      "highlights": [
-        "Advisor: Prof. Atlas Wang."
-      ]
+      "highlights": ["Advisor: Prof. Atlas Wang."]
     }
   ],
   "volunteer": [],
