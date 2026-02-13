@@ -1,0 +1,9 @@
+github_users:
+  - jzh15
+
+repo_description_lines_max: 2
+
+github_repos:
+  - NVlabs/LSM
+  - VITA-Group/VLM-3R
+  - NVlabs/InstantSplat
