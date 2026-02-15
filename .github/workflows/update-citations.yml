@@ -46,20 +46,13 @@ jobs:
         id: run_citation_update
         shell: bash
         run: |
-          set +e
-          echo "🚀 Running citation update script (single attempt)..."
+          set -euo pipefail
+          echo "🚀 Running citation update script..."
           start_time=$(date)
-          timeout 90 python bin/update_scholar_citations.py
-          status=$?
+          timeout 180 python bin/update_scholar_citations.py
           end_time=$(date)
-          if [ $status -eq 0 ]; then
-            echo "✅ Citation update succeeded (started at $start_time, ended at $end_time)."
-            echo "✅ Citation update succeeded." >> $GITHUB_STEP_SUMMARY
-          else
-            echo "❌ Citation update script failed with exit code $status (started at $start_time, ended at $end_time)."
-            echo "❌ Citation update script failed with exit code $status." >> $GITHUB_STEP_SUMMARY
-          fi
-          set -e
+          echo "✅ Citation update succeeded (started at $start_time, ended at $end_time)."
+          echo "✅ Citation update succeeded." >> $GITHUB_STEP_SUMMARY
 
       - name: Save new citations.yml hash
         id: after
