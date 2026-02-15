@@ -6,7 +6,7 @@ subtitle: Master's student at Xiamen University
 
 profile:
   align: right
-  image: personal/jian_zhang.jpg
+  image: personal/jian_zhang_sanya.jpeg
   image_circular: true # crops the image to make it circular
   # more_info: >
   #   <p>Email: zjrandomyeah@gmail.com</p>
@@ -27,6 +27,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a master's student at Xiamen University working on geometric reasoning for 3D vision, embodied intelligence, and AI-native content creation. My research goal is to build systems that understand the dynamic world from sparse observations and can assist humans with reliable spatial perception.
+Hello, I am Jian (Dylan). Over the past two years, I have had an impactful collaboration with Zhiwen, through which I developed core research skills and a clear long-term goal: building systems that can perceive, decide, and act in the physical world like humans. I believe this direction can fundamentally reshape society. I plan to start my PhD at Texas A&M University in Fall 2026 or Spring 2027.
 
-I recently co-developed projects such as VLM-3R, Large Spatial Model (NeurIPS 2024), DynamicVerse (NeurIPS 2025), and InstantSplat, where we combine large multimodal models with geometric priors to enable end-to-end semantic reconstruction, world modeling, and fast Gaussian splatting. These collaborations often involve partners from both academia and industry, and I actively maintain the associated open-source artifacts to keep our results reproducible.
+My recent projects include VLM-3R, DynamicVerse, Large Spatial Model, and InstantSplat. In my early stage, I focused on faster 3D reconstruction and semantic 3D representation, with some exploration in video generation. I am now increasingly focused on intelligence for embodied systems in the physical world.
+
+I am currently seeking internship opportunities. Feel free to contact me by email.
