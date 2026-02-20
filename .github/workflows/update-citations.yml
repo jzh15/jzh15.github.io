@@ -10,6 +10,7 @@ on:
 jobs:
   update-citations:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       - name: Checkout repository
@@ -21,7 +22,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.13"
+          python-version: "3.11"
 
       - name: Install dependencies
         run: |
@@ -47,12 +48,32 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          echo "🚀 Running citation update script..."
+          echo "🚀 Running citation update script with retries..."
           start_time=$(date)
-          timeout 180 python bin/update_scholar_citations.py
+          success=0
+          for attempt in 1 2 3; do
+            echo "🔁 Attempt ${attempt}/3..."
+            if timeout 600 python bin/update_scholar_citations.py; then
+              success=1
+              break
+            fi
+            status=$?
+            echo "⚠️ Attempt ${attempt} failed with exit code ${status}."
+            if [ "${attempt}" -lt 3 ]; then
+              sleep_seconds=$((attempt * 20))
+              echo "⏳ Waiting ${sleep_seconds}s before retry..."
+              sleep "${sleep_seconds}"
+            fi
+          done
+
+          if [ "${success}" -ne 1 ]; then
+            echo "❌ Citation update failed after 3 attempts." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
           end_time=$(date)
           echo "✅ Citation update succeeded (started at $start_time, ended at $end_time)."
-          echo "✅ Citation update succeeded." >> $GITHUB_STEP_SUMMARY
+          echo "✅ Citation update succeeded." >> "$GITHUB_STEP_SUMMARY"
 
       - name: Save new citations.yml hash
         id: after
