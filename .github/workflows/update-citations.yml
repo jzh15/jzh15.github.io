@@ -29,7 +29,7 @@ jobs:
         run: |
           echo "🔧 Installing dependencies..."
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install pyyaml
 
       - name: Save current citations.yml hash
         id: before
@@ -57,9 +57,14 @@ jobs:
             if timeout 600 python bin/update_scholar_citations.py; then
               success=1
               break
+            else
+              status=$?
+              if [ "${status}" -eq 124 ]; then
+                echo "⚠️ Attempt ${attempt} timed out after 600 seconds."
+              else
+                echo "⚠️ Attempt ${attempt} failed with exit code ${status}."
+              fi
             fi
-            status=$?
-            echo "⚠️ Attempt ${attempt} failed with exit code ${status}."
             if [ "${attempt}" -lt 3 ]; then
               sleep_seconds=$((attempt * 20))
               echo "⏳ Waiting ${sleep_seconds}s before retry..."
