@@ -112,10 +112,35 @@ jobs:
           echo "🔧 Git configured."
 
       - name: Commit and push if changed
+        shell: bash
         run: |
+          set -euo pipefail
           git add _data/citations.yml
-          git diff --staged --quiet || (
-            echo "📤 Committing and pushing changes..."
-            git commit -m "Update Google Scholar citations"
-            git push
-          )
+          if git diff --staged --quiet; then
+            echo "ℹ️ No citation changes to commit."
+            exit 0
+          fi
+
+          echo "📤 Committing citation changes..."
+          git commit -m "Update Google Scholar citations"
+
+          target_branch="${GITHUB_REF_NAME:-main}"
+          echo "🎯 Target branch: ${target_branch}"
+
+          for attempt in 1 2 3; do
+            echo "🚀 Push attempt ${attempt}/3..."
+            if git push origin "HEAD:${target_branch}"; then
+              echo "✅ Push succeeded."
+              exit 0
+            fi
+
+            echo "⚠️ Push rejected. Rebasing onto origin/${target_branch} and retrying..."
+            git fetch origin "${target_branch}"
+            git rebase "origin/${target_branch}"
+            sleep_seconds=$((attempt * 5))
+            echo "⏳ Waiting ${sleep_seconds}s before next push attempt..."
+            sleep "${sleep_seconds}"
+          done
+
+          echo "❌ Failed to push citation update after 3 attempts."
+          exit 1
