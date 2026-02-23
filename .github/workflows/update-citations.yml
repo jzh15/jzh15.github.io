@@ -10,7 +10,8 @@ on:
 jobs:
   update-citations:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # The citation fetch can be slow/unreliable; allow retries to finish.
+    timeout-minutes: 45
 
     steps:
       - name: Checkout repository
