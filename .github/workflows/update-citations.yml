@@ -7,6 +7,10 @@ on:
     - cron: "0 0 * * 5" # Friday
   workflow_dispatch:
 
+concurrency:
+  group: update-citations-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   update-citations:
     runs-on: ubuntu-latest
