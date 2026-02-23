@@ -4,12 +4,12 @@ papers:
   qBNtBsAAAAAJ:d1gkVwhDpl0C:
     citations: 48
     title: 'VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction'
-    year: '2025'
+    year: '2026'
   qBNtBsAAAAAJ:u-x6o8ySG0sC:
     citations: 45
     title: 'Large spatial model: End-to-end unposed images to semantic 3d'
     year: '2024'
   qBNtBsAAAAAJ:u5HHmVD_uO8C:
     citations: 232
-    title: 'Instantsplat: Sparse-view gaussian splatting in seconds'
+    title: 'Instantsplat: Unbounded sparse-view pose-free gaussian splatting in 40 seconds'
     year: '2024'
