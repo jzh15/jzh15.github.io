@@ -362,12 +362,14 @@ In order to deploy the changes from `main`, you can manually trigger the `deploy
 
 > [!TIP]
 > To ensure that these commits can trigger further GitHub Actions workflows (such as site rebuilds), you can use a Personal Access Token (PAT) instead of the default GitHub Actions token.
-> If you have set up a PAT, citation updates will trigger further workflows (such as site rebuilds) after committing changes. In order to run the action with a PAT, you need to uncomment the following lines from the workflow file (`update-citations.yml`):
+> If you have set up a PAT, citation updates will trigger further workflows (such as site rebuilds) after committing changes. The workflow file (`update-citations.yml`) should include the following checkout configuration:
 >
 > ```yaml
 > with:
->   token: ${{ secrets.PAT }}
+>   token: ${{ secrets.PAT || github.token }}
 > ```
+>
+> This keeps the workflow working before `PAT` is configured, but automatic downstream deploys require the `PAT` secret to be present.
 
 ### Why is a PAT required?
 

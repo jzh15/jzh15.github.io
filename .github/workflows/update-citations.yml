@@ -20,9 +20,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      # See CUSTOMIZE.md for details on how to set up PAT for triggering subsequent workflows
-      #        with:
-      #          token: ${{ secrets.PAT }}
+        with:
+          # A PAT is required for citation-update commits to trigger deploy.yml.
+          # Fall back to github.token so the workflow still runs before PAT is configured.
+          token: ${{ secrets.PAT || github.token }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
