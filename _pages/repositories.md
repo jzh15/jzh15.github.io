@@ -33,6 +33,9 @@ nav_order: 4
 
 {% if site.repo_cards_mode == 'html' %}
 
-  <script src="{{ '/assets/js/repo-cards.js' | relative_url | bust_file_cache }}"></script>
+  <script
+    src="{{ '/assets/js/repo-cards.js' | relative_url | bust_file_cache }}"
+    data-repo-metadata-url="{{ '/assets/json/repo-metadata.json' | relative_url | bust_file_cache }}"
+  ></script>
 
 {% endif %}

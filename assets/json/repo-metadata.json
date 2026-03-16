@@ -1,0 +1,22 @@
+{
+  "repos": {
+    "NVlabs/LSM": {
+      "description": "[NeurIPS'24] Large Spatial Model: End-to-end Unposed Images to Semantic 3D",
+      "language": "Python",
+      "stargazers_count": 228,
+      "forks_count": 9
+    },
+    "VITA-Group/VLM-3R": {
+      "description": "[CVPR 2026] VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction",
+      "language": "Python",
+      "stargazers_count": 362,
+      "forks_count": 25
+    },
+    "NVlabs/InstantSplat": {
+      "description": "InstantSplat: Sparse-view SfM-free Gaussian Splatting in Seconds",
+      "language": "Python",
+      "stargazers_count": 1642,
+      "forks_count": 143
+    }
+  }
+}

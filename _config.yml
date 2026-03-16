@@ -33,7 +33,7 @@ repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/b
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_stats_base_url: https://github-readme-stats-alpha-nine-85.vercel.app
 repo_users_enabled: false
-repo_cards_mode: html # "image" (github-readme-stats) or "html" (GitHub API)
+repo_cards_mode: html # "image" (github-readme-stats) or "html" (local JSON-backed cards)
 repo_trophies:
   enabled: false
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy

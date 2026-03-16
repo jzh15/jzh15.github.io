@@ -1,6 +1,7 @@
 (() => {
   const cards = document.querySelectorAll(".repo-card-html[data-repo]");
   if (!cards.length) return;
+  const metadataUrl = document.currentScript?.dataset.repoMetadataUrl || "/assets/json/repo-metadata.json";
 
   const numberFormatter = new Intl.NumberFormat("en", { notation: "compact" });
 
@@ -24,24 +25,36 @@
     }
   };
 
-  cards.forEach((card) => {
-    const repo = card.getAttribute("data-repo");
-    if (!repo || !repo.includes("/")) return;
+  const markUnavailable = (card) => {
+    const desc = card.querySelector(".repo-card-desc");
+    if (desc) {
+      desc.textContent = "Description unavailable.";
+    }
+  };
 
-    const apiUrl = `https://api.github.com/repos/${repo}`;
-    fetch(apiUrl)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`GitHub API error: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then((data) => updateCard(card, data))
-      .catch(() => {
-        const desc = card.querySelector(".repo-card-desc");
-        if (desc) {
-          desc.textContent = "Description unavailable (GitHub API limit).";
+  fetch(metadataUrl)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Repository metadata error: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((payload) => {
+      const repos = payload.repos || {};
+
+      cards.forEach((card) => {
+        const repo = card.getAttribute("data-repo");
+        if (!repo || !repo.includes("/")) return;
+
+        const data = repos[repo];
+        if (data) {
+          updateCard(card, data);
+        } else {
+          markUnavailable(card);
         }
       });
-  });
+    })
+    .catch(() => {
+      cards.forEach(markUnavailable);
+    });
 })();
