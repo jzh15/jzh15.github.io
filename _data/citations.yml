@@ -1,15 +1,15 @@
 metadata:
-  last_updated: '2026-03-16'
+  last_updated: '2026-03-23'
 papers:
   qBNtBsAAAAAJ:d1gkVwhDpl0C:
-    citations: 57
+    citations: 60
     title: 'VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction'
     year: '2026'
   qBNtBsAAAAAJ:u-x6o8ySG0sC:
-    citations: 46
+    citations: 48
     title: 'Large spatial model: End-to-end unposed images to semantic 3d'
     year: '2024'
   qBNtBsAAAAAJ:u5HHmVD_uO8C:
-    citations: 250
+    citations: 254
     title: 'Instantsplat: Unbounded sparse-view pose-free gaussian splatting in 40 seconds'
     year: '2024'
