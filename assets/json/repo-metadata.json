@@ -15,8 +15,8 @@
     "NVlabs/InstantSplat": {
       "description": "InstantSplat: Sparse-view SfM-free Gaussian Splatting in Seconds",
       "language": "Python",
-      "stargazers_count": 1650,
-      "forks_count": 142
+      "stargazers_count": 1651,
+      "forks_count": 143
     }
   }
 }
