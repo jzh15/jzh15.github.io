@@ -9,14 +9,14 @@
     "VITA-Group/VLM-3R": {
       "description": "[CVPR 2026] VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction",
       "language": "Python",
-      "stargazers_count": 367,
+      "stargazers_count": 368,
       "forks_count": 25
     },
     "NVlabs/InstantSplat": {
       "description": "InstantSplat: Sparse-view SfM-free Gaussian Splatting in Seconds",
       "language": "Python",
-      "stargazers_count": 1652,
-      "forks_count": 145
+      "stargazers_count": 1653,
+      "forks_count": 146
     }
   }
 }
