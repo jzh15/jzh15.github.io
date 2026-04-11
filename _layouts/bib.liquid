@@ -26,7 +26,7 @@
         {% endif %}
       {% endif %}
       {% if entry.preview_video and entry.video %}
-        {% assign preview_poster = nil %}
+        {% assign preview_poster = null %}
         {% if entry.preview %}
           {% if entry.preview contains '://' %}
             {% assign preview_poster = entry.preview %}
