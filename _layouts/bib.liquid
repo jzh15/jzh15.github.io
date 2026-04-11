@@ -25,17 +25,7 @@
           <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
         {% endif %}
       {% endif %}
-      {% if entry.preview_video and entry.video %}
-        {% assign preview_poster = null %}
-        {% if entry.preview %}
-          {% if entry.preview contains '://' %}
-            {% assign preview_poster = entry.preview %}
-          {% else %}
-            {% assign preview_poster = entry.preview | prepend: '/assets/img/publication_preview/' %}
-          {% endif %}
-        {% endif %}
-        {% include video.liquid path=entry.video class="preview z-depth-1 rounded" width="100%" controls=true muted=true loop=true poster=preview_poster %}
-      {% elsif entry.preview %}
+      {% if entry.preview %}
         {% if entry.preview contains '://' %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
         {% else %}
