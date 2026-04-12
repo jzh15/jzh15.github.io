@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-04-10'
+  last_updated: '2026-04-12'
 papers:
   qBNtBsAAAAAJ:d1gkVwhDpl0C:
-    citations: 73
+    citations: 75
     title: 'VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction'
     year: '2026'
   qBNtBsAAAAAJ:u-x6o8ySG0sC:
