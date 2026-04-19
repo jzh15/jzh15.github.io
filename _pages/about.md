@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello, I am Jian (Dylan). Over the past two years, I have had an impactful collaboration with Zhiwen, through which I developed core research skills and a clear long-term goal: building systems that can perceive, decide, and act in the physical world like humans. I believe this direction can fundamentally reshape society. I plan to start my PhD at Texas A&M University in Fall 2026.
+Hello, I am Jian (Dylan). Over the past two years, I have had impactful collaborations with [Yue Huang](https://huangyue05.github.io/) and [Xinghao Ding](https://informatics.xmu.edu.cn/en/info/1069/1076.htm), through which I developed core research skills and a clear long-term goal: building systems that can perceive, decide, and act in the physical world like humans. I believe this direction can fundamentally reshape society. I plan to start my PhD at Texas A&M University in Fall 2026.
 
 My recent projects include SpatialStack, VLM-3R, DynamicVerse, Large Spatial Model, and InstantSplat. In my early stage, I focused on faster 3D reconstruction and semantic 3D representation, with some exploration in video generation. I am now increasingly focused on intelligence for embodied systems in the physical world.
 
