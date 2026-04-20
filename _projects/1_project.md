@@ -6,6 +6,7 @@ img: assets/img/publication_preview/spatialstack.png
 redirect: https://spatial-stack.github.io/
 importance: 1
 category: work
+published: false
 github: https://github.com/phai-lab/SpatialStack
 github_stars: phai-lab/SpatialStack
 ---

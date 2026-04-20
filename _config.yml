@@ -287,7 +287,7 @@ scholar:
   details_dir: bibliography
   details_link: Details
 
-  query: "@*"
+  query: "@*[hidden!=true]"
   group_by: year
   group_order: descending
 
