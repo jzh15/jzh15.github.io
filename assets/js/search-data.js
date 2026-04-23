@@ -409,7 +409,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-spatialstack",
+          section: "News",},{id: "projects-dyn-bench",
+          title: 'Dyn-Bench',
+          description: "A benchmark for spatio-temporal dynamics reasoning in the physical 4D world.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/10_project/";
+            },},{id: "projects-spatialstack",
           title: 'SpatialStack',
           description: "Layered geometry-language fusion for 3D VLM spatial reasoning.",
           section: "Projects",handler: () => {
