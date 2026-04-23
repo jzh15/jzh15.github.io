@@ -86,6 +86,19 @@
       "courses": []
     }
   ],
+  "projects": [
+    {
+      "name": "Dyn-Bench",
+      "url": "https://dyn-bench.github.io/",
+      "startDate": "2026-03-01",
+      "endDate": "",
+      "summary": "A benchmark for evaluating how multimodal large language models perceive, track, and reason about dynamic contents in the physical 4D world.",
+      "highlights": [
+        "CVPR 2026 project on spatio-temporal dynamics reasoning and grounding for MLLMs.",
+        "<a href=\"https://arxiv.org/abs/2603.12746\" target=\"_blank\" rel=\"noopener noreferrer\">Paper</a> / <a href=\"https://github.com/Dynamics-X/Thinking-in-Dynamics\" target=\"_blank\" rel=\"noopener noreferrer\">Code</a> / <a href=\"https://huggingface.co/datasets/yu2hi13/Dyn-Bench\" target=\"_blank\" rel=\"noopener noreferrer\">Dataset</a> / <a href=\"https://dyn-bench.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Project page</a>"
+      ]
+    }
+  ],
   "certificates": [],
   "languages": [],
   "references": []
