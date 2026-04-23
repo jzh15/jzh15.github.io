@@ -1,0 +1,138 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames]{color,xcolor}
+
+\usepackage{vwcol}
+\usepackage{enumitem}
+
+\usepackage{vwcol}
+
+\usepackage{graphicx,calc}
+\newcommand*\git{\vcenter{\hbox{\includegraphics[width=.9em]{icon/Git.png}}}}
+\newcommand*\Google{\vcenter{\hbox{\includegraphics[width=.9em]{icon/Google.png}}}}
+\newcommand*\web{\vcenter{\hbox{\includegraphics[width=.9em]{icon/Web.png}}}}
+\newcommand*\email{\vcenter{\hbox{\includegraphics[width=.9em]{icon/Mail.png}}}}
+\newcommand*\phone{\vcenter{\hbox{\includegraphics[width=.9em]{icon/Phone.png}}}}
+\newcommand*\twitter{\vcenter{\hbox{\includegraphics[width=.9em]{icon/X.png}}}}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+% 全局取消段落缩进
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\begin{vwcol}[widths={0.4,0.6}, sep=.8cm, justify=flush,rule=0pt,indent=1em] 
+\huge{\textbf{Jian Zhang}}
+
+\small $\web$ \href{https://jzh15.github.io/}{\textcolor{BlueViolet}{\underline{\textbf{Website}}}} 
+\hspace{0mm} $\Google$ \href{https://scholar.google.com/citations?user=qBNtBsAAAAAJ&hl=en&oi=sra}{\textcolor{BlueViolet}{\bf \underline{Scholar}}} \hspace{0mm} $\git$ \href{https://github.com/jzh15}{\textcolor{BlueViolet}{\bf \underline{GitHub}}}
+
+$\email$ zjrandomyeah@gmail.com \hspace{0mm} $\phone$(+86)18379881189
+\end{vwcol} 
+
+\vspace{-0.7mm}
+\begin{rSection}{Research Interests}
+\vspace{-1mm}
+\begin{itemize}[leftmargin=1.5em, itemsep=-0.5mm]
+    \item \textbf{3D-Consistent Content Generation}: 
+    \\ \small Multi-View Consistent Video Generation, 3D Scene Generation
+    \item \textbf{3D Spatial Understanding \& Embodied AI}: 
+    \\ \small 3D Vision-Language Models, Sparse-view 3D Reconstruction, Embodied Agents
+\end{itemize}
+\end{rSection}
+
+\vspace{-1.5mm}
+
+\begin{rSection}{Education}
+\vspace{-0mm}
+\vspace{-1mm}
+{\bf Xiamen University} \hfill Sep. 2023 - Jun. 2026
+\\ M.S., Information \& Communication Engineering 
+\hfill Advisors: Prof. \href{https://huangyue05.github.io/}{\textcolor{BlueViolet}{Yue Huang}} and Prof. \href{https://informatics.xmu.edu.cn/en/info/1069/1076.htm}{\textcolor{BlueViolet}{Xinghao Ding}}
+
+\vspace{-1mm}
+{\bf Nanchang University} \hfill Sep. 2019 - Jun. 2023
+\\ B.S., Artificial Intelligence
+\hfill Advisor: Prof. \href{https://teacher.ncu.edu.cn/publish/091987/}{\textcolor{BlueViolet}{Li Zhu}}
+
+\end{rSection}
+
+\vspace{-1mm}
+
+\begin{rSection}{Selected Publications\&Manuscripts}
+\vspace{-1mm}
+\small{* denotes an equal contribution.} \\
+\textbf{\underline{A. 3D Vision-Language Models}}:
+
+{\bf CVPR 2026}:
+\underline{\textbf{J. Zhang}}*, Z. Fan*, R. Li, J. Zhang, R. Chen, H. Hu, K. Wang, H. Qu, D. Wang, 
+Z. Yan, H. Xu, J. Theiss, T. Chen, J. Li, Z. Tu, Z. Wang, R. Ranjan,
+"{\texttt{VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction}}".\\
+\hspace{1em}
+{\color{BlueViolet}
+\href{https://arxiv.org/abs/2505.20279}{[\underline{Paper}]}\hspace{1em}
+\href{https://github.com/VITA-Group/VLM-3R}{[\underline{Code}]}\hspace{1em}
+\href{https://vlm-3r.github.io/}{[\underline{Project Page}]}}
+\vspace{-1mm}
+
+{\bf CVPR 2026}: \underline{\textbf{J. Zhang}}*, S. Zhou*, B. Liu*, et al., "{\texttt{SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning}}".\\
+\hspace{1em} {\color{BlueViolet} \href{https://arxiv.org/abs/2603.27437}{[\underline{Paper}]}\hspace{1em} \href{https://github.com/jzh15/SpatialStack}{[\underline{Code}]}\hspace{1em} \href{https://spatial-stack.github.io/}{[\underline{Project Page}]}} \vspace{-1mm}
+
+{\bf NeurIPS 2025}:
+K. Wen*, Y. Huang*, et al., \underline{\textbf{J. Zhang}}, et al., Z. Fan,
+"{\texttt{DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling
+}}".\\
+\hspace{1em}
+{\color{BlueViolet}
+\href{https://arxiv.org/pdf/2512.03000}{[\underline{Paper}]}\hspace{1em}
+\href{https://github.com/Dynamics-X/DynamicVerse}{[\underline{Code}]}\hspace{1em}
+\href{https://dynamic-verse.github.io/}{[\underline{Project Page}]}}
+\vspace{-1mm}
+
+{ {\bf NeurIPS 2024}}:
+\underline{\textbf{J. Zhang}}*, Z. Fan*, W. Cong, P. Wang, R. Li, K. Wen, S. Zhou, Achuta Kadambi, Z. Wang, D. Xu, Boris Ivanovic, Marco Pavone, Y. Wang,
+ "{\texttt{Large Spatial Model: End-to-end Unposed Images to Semantic 3D}}".
+\\ \hspace{1em} {\color{BlueViolet} \href{https://arxiv.org/abs/2410.18956}{[\underline{Paper}]} \hspace{1em} \href{https://github.com/NVlabs/LSM}{[\underline{Code}]} \hspace{1em} \href{https://largespatialmodel.github.io/}{[\underline{Project Page}]}} \hspace{1em}
+\vspace{-1mm}
+
+\textbf{\underline{B. Sparse-view 3D Reconstruction}}:
+
+{ {\bf ArXiv Preprint}}:
+Z. Fan*, K. Wen*, W. Cong*, K. Wang, \underline{\textbf{J. Zhang}}, X. Ding, 
+D. Xu, Boris Ivanovic, Marco Pavone, Z. Wang. Y. Wang,
+ "{\texttt{InstantSplat: Sparse-view Gaussian Splatting in Seconds}}".
+\\ \hspace{1em} {\color{BlueViolet} \href{https://arxiv.org/abs/2403.20309}{[\underline{Paper}]} \hspace{1em} \href{https://github.com/NVlabs/InstantSplat}{[\underline{Code}]} \hspace{1em} \href{https://instantsplat.github.io/}{[\underline{Project Page}]}} \hspace{1em}
+\vspace{-1mm}
+ 
+\vspace{-1mm}
+\end{rSection}
+
+\begin{rSection}{Selected Experience}
+
+\vspace{-0.5mm}
+
+{ {\bf Texas A\&M University}} \hfill  May. 2025 - Aug. 2025
+\\Research Assistant on 3D Vision and Embodied Intelligence \hfill Advisor: Prof. {\color{BlueViolet} \href{https://zhiwenfan.github.io/}{Zhiwen Fan}}
+
+\vspace{-0.5mm}
+
+{ {\bf VITA Group, University of Texas at Austin}} \hfill  Jan. 2024 - May. 2025
+\\Research Assistant on 3D Spatial Reconstruction, and Understanding \hfill Advisor: Prof. {\color{BlueViolet} \href{https://vita-group.github.io/group.html}{Atlas Wang}}
+
+\end{rSection}
+
+\vspace{-0.5mm}
+\begin{rSection}{Selected  Honors}
+\vspace{-1mm}
+\begin{itemize}[leftmargin=1.5em]
+    \item \small Nanchang University Special Scholarship (Top 5\%) \hfill 2023
+    \item \small Outstanding Graduate of Nanchang University (Top 5\%) \hfill 2023
+    \item \small First Prize in China Robot Competition (Top 3) \hfill 2021
+\end{itemize}
+\end{rSection}
+
+\end{document}
