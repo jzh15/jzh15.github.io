@@ -19,7 +19,7 @@ Layered geometry-language fusion for 3D VLM spatial reasoning.
 
 [Project Page](https://spatial-stack.github.io/)  
 [Paper](https://arxiv.org/abs/2603.27437)  
-[Code](https://github.com/phai-lab/SpatialStack)  
+[Code](https://github.com/jzh15/SpatialStack)  
 [Model](https://huggingface.co/Journey9ni/SpatialStack-Qwen2.5-4B)  
 [Data](https://huggingface.co/datasets/Journey9ni/SpatialStackData)
 

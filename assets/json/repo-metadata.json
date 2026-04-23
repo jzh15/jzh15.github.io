@@ -1,16 +1,28 @@
 {
   "repos": {
+    "jzh15/SpatialStack": {
+      "description": "[CVPR 2026]SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0
+    },
     "NVlabs/LSM": {
       "description": "[NeurIPS'24] Large Spatial Model: End-to-end Unposed Images to Semantic 3D",
       "language": "Python",
       "stargazers_count": 230,
       "forks_count": 9
     },
+    "VITA-Group/VLM-3R": {
+      "description": "[CVPR 2026] VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction",
+      "language": "Python",
+      "stargazers_count": 377,
+      "forks_count": 25
+    },
     "NVlabs/InstantSplat": {
       "description": "InstantSplat: Sparse-view SfM-free Gaussian Splatting in Seconds",
       "language": "Python",
       "stargazers_count": 1655,
-      "forks_count": 147
+      "forks_count": 148
     }
   }
 }
