@@ -4,5 +4,7 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - phai-lab/SpatialStack
   - NVlabs/LSM
+  - VITA-Group/VLM-3R
   - NVlabs/InstantSplat
