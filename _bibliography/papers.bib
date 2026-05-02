@@ -61,6 +61,18 @@ In this work, we present the Large Spatial Model (LSM), which processes unposed 
   abstract={Understanding the dynamic physical world, characterized by its evolving 3D structure, real-world motion, and semantic content with textual descriptions, is crucial for human-agent interaction and enables embodied agents to perceive and act within real environments with human-like capabilities. However, existing datasets are often derived from limited simulators or utilize traditional Structure-from-Motion for up-to-scale annotation and offer limited descriptive captioning, which restricts the capacity of foundation models to accurately interpret real-world dynamics from monocular videos, commonly sourced from the internet. To bridge these gaps, we introduce DynamicVerse, a physical-scale, multimodal 4D world modeling framework for dynamic real-world video. We employ large vision, geometric, and multimodal models to interpret metric-scale static geometry, real-world dynamic motion, instance-level masks, and holistic descriptive captions. By integrating window-based Bundle Adjustment with global optimization, our method converts long real-world video sequences into a comprehensive 4D multimodal format. DynamicVerse delivers a large-scale dataset consists of 100K+ videos with 800K+ annotated masks and 10M+ frames from internet videos. Experimental evaluations on three benchmark tasks, namely video depth estimation, camera pose estimation, and camera intrinsics estimation, demonstrate that our 4D modeling achieves superior performance in capturing physical-scale measurements with greater global accuracy than existing methods.},
 }
 
+@inproceedings{huang2026thinking,
+  title={Thinking in Dynamics: How Multimodal Large Language Models Perceive, Track, and Reason Dynamics in Physical 4D World},
+  author={Huang*, Yuzhi and Wen*, Kairun and Gao*, Rongxin and Liu, Dongxuan and Lou, Yibin and Wu, Jie and Xu, Jing and Zhang, Jian and Yang, Zheng and Lin, Yunlong and Li, Chenxin and Pan, Panwang and Lu, Junbin and Jiang, Jingyan and Ding, Xinghao and Huang, Yue and Wang, Zhi},
+  booktitle={CVPR},
+  year={2026},
+  preview={dynbench.jpg},
+  website={https://dyn-bench.github.io/},
+  pdf={https://arxiv.org/abs/2603.12746},
+  code={https://github.com/Dynamics-X/Thinking-in-Dynamics},
+  abstract={We present Dyn-Bench, a large-scale benchmark for quantitatively evaluating the spatio-temporal reasoning abilities of multimodal large language models under fine-grained dynamic-object understanding. The benchmark covers dynamic inter-object perception, dynamic object-scene tracking, and dynamic camera-object reasoning, pairing textual reasoning tasks with dynamic object grounding to examine how models perceive, track, and interpret motion and evolving 4D scenes.}
+}
+
 @article{fan2024instantsplat,
   title={Instantsplat: Unbounded sparse-view pose-free gaussian splatting in 40 seconds},
   author={Fan, Zhiwen and Cong, Wenyan and Wen, Kairun and Wang, Kevin and Zhang, Jian and Ding, Xinghao and Xu, Danfei and Ivanovic, Boris and Pavone, Marco and Pavlakos, Georgios and others},
