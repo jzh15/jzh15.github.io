@@ -18,6 +18,12 @@
       "stargazers_count": 386,
       "forks_count": 26
     },
+    "Dynamics-X/DynamicVerse": {
+      "description": "[NeurIPS 2025]\"DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling\"",
+      "language": "Python",
+      "stargazers_count": 100,
+      "forks_count": 4
+    },
     "Dynamics-X/Thinking-in-Dynamics": {
       "description": "[CVPR 2026]\"Thinking in Dynamics: How Multimodal Large Language Models Perceive, Track, and Reason Dynamics in Physical 4D World\"",
       "language": "Python",
