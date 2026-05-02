@@ -606,11 +606,12 @@ footer.sticky-bottom {
 
 .repo-card-header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.55rem;
   font-weight: 700;
   font-size: 1.15rem;
   margin-bottom: 0.4rem;
+  min-height: 2.8rem;
 }
 
 .repo-card-icon {
@@ -623,6 +624,12 @@ footer.sticky-bottom {
 
 .repo-card-title {
   color: var(--global-theme-color);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  line-height: 1.2;
 }
 
 .repo-card-desc {
@@ -630,7 +637,12 @@ footer.sticky-bottom {
   line-height: 1.35;
   color: var(--global-text-color-light);
   margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
   overflow-wrap: anywhere;
+  min-height: 2.6rem;
 }
 
 .repo-card-meta {
