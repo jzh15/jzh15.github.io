@@ -1,6 +1,10 @@
 metadata:
   last_updated: '2026-05-17'
 papers:
+  qBNtBsAAAAAJ:9yKSN-GCB0IC:
+    citations: 1
+    title: 'SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning'
+    year: '2026'
   qBNtBsAAAAAJ:d1gkVwhDpl0C:
     citations: 89
     title: 'VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction'
