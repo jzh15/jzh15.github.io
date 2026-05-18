@@ -65,7 +65,9 @@
       "startDate": "2023-09-01",
       "endDate": "2026-07-01",
       "score": "",
-      "highlights": ["Advisor: Prof. <a href=\"https://huangyue05.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Yue Huang</a>."],
+      "highlights": [
+        "Advisors: Prof. <a href=\"https://huangyue05.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Yue Huang</a> and Prof. <a href=\"https://informatics.xmu.edu.cn/en/info/1069/1076.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Xinghao Ding</a>."
+      ],
       "courses": []
     },
     {
