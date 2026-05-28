@@ -16,7 +16,7 @@
       "description": "[CVPR 2026] VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction",
       "language": "Python",
       "stargazers_count": 405,
-      "forks_count": 27
+      "forks_count": 28
     },
     "Dynamics-X/DynamicVerse": {
       "description": "[NeurIPS 2025]\"DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling\"",
