@@ -15,7 +15,7 @@
     "VITA-Group/VLM-3R": {
       "description": "[CVPR 2026] VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction",
       "language": "Python",
-      "stargazers_count": 409,
+      "stargazers_count": 408,
       "forks_count": 28
     },
     "Dynamics-X/DynamicVerse": {
@@ -27,7 +27,7 @@
     "Dynamics-X/Thinking-in-Dynamics": {
       "description": "[CVPR 2026]\"Thinking in Dynamics: How Multimodal Large Language Models Perceive, Track, and Reason Dynamics in Physical 4D World\"",
       "language": "Python",
-      "stargazers_count": 15,
+      "stargazers_count": 16,
       "forks_count": 1
     },
     "NVlabs/InstantSplat": {
