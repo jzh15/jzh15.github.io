@@ -27,14 +27,14 @@
     "Dynamics-X/Thinking-in-Dynamics": {
       "description": "[CVPR 2026]\"Thinking in Dynamics: How Multimodal Large Language Models Perceive, Track, and Reason Dynamics in Physical 4D World\"",
       "language": "Python",
-      "stargazers_count": 16,
+      "stargazers_count": 17,
       "forks_count": 1
     },
     "NVlabs/InstantSplat": {
       "description": "InstantSplat: Sparse-view SfM-free Gaussian Splatting in Seconds",
       "language": "Python",
       "stargazers_count": 1675,
-      "forks_count": 151
+      "forks_count": 152
     }
   }
 }
