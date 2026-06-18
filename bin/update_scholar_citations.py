@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import json
 import os
 import re
 import sys
@@ -14,6 +15,13 @@ CONFIG_FILE = "_data/socials.yml"
 BIB_FILE = "_bibliography/papers.bib"
 OUTPUT_FILE = "_data/citations.yml"
 REQUEST_TIMEOUT_SECONDS = 20
+
+# SerpAPI's Google Scholar Author endpoint returns every article's citation
+# count in a single request and works reliably from datacenter/CI IPs, unlike
+# scraping scholar.google.com directly (which Google blocks by IP). It is the
+# preferred source when SERPAPI_KEY is set; the direct scrape further below is
+# kept as a fallback for local runs without a key.
+SERPAPI_ENDPOINT = "https://serpapi.com/search.json"
 
 # A browser-like UA helps avoid low-quality bot blocks.
 USER_AGENT = (
@@ -168,6 +176,54 @@ def fetch_single_publication_citations(scholar_user_id: str, pub_id: str) -> int
     return parse_citation_count(html)
 
 
+def fetch_all_citations_via_serpapi(scholar_user_id: str, api_key: str) -> dict:
+    """
+    Fetch citation counts for every publication of an author in a single
+    SerpAPI Google Scholar Author request.
+
+    Returns a mapping of "{scholar_user_id}:{pub_id}" -> citation count (int).
+    Raises RuntimeError on transport/API errors so the caller can fall back to
+    the direct scrape.
+    """
+    params = urllib.parse.urlencode(
+        {
+            "engine": "google_scholar_author",
+            "author_id": scholar_user_id,
+            "num": 100,
+            "hl": "en",
+            "api_key": api_key,
+        }
+    )
+    url = f"{SERPAPI_ENDPOINT}?{params}"
+
+    try:
+        payload = json.loads(fetch_html(url))
+    except ValueError as exc:
+        raise RuntimeError(f"Invalid JSON from SerpAPI: {exc}") from exc
+
+    if not isinstance(payload, dict):
+        raise RuntimeError("Unexpected SerpAPI response shape.")
+    if payload.get("error"):
+        raise RuntimeError(f"SerpAPI error: {payload['error']}")
+
+    citations = {}
+    for article in payload.get("articles", []) or []:
+        citation_id = article.get("citation_id")
+        if not citation_id:
+            continue
+        # A paper with zero citations has no "cited_by" block; treat as 0.
+        value = (article.get("cited_by") or {}).get("value", 0)
+        try:
+            citations[citation_id] = int(value)
+        except (TypeError, ValueError):
+            citations[citation_id] = 0
+
+    if not citations:
+        raise RuntimeError("SerpAPI returned no article citation data.")
+
+    return citations
+
+
 def get_scholar_citations() -> None:
     """Fetch and update Google Scholar citation data."""
     scholar_user_id = load_scholar_user_id()
@@ -186,6 +242,19 @@ def get_scholar_citations() -> None:
     publications = parse_bib_publications(BIB_FILE)
     citation_data = {"metadata": {"last_updated": datetime.now().strftime("%Y-%m-%d")}, "papers": {}}
 
+    # Prefer one reliable SerpAPI call for all articles; fall back to the direct
+    # per-article scrape when no key is configured or the call fails.
+    serpapi_key = os.environ.get("SERPAPI_KEY") or os.environ.get("SERPAPI_API_KEY")
+    serpapi_citations = {}
+    if serpapi_key:
+        try:
+            serpapi_citations = fetch_all_citations_via_serpapi(scholar_user_id, serpapi_key)
+            print(f"SerpAPI: fetched citation counts for {len(serpapi_citations)} articles.")
+        except Exception as exc:
+            print(f"Warning: SerpAPI fetch failed; falling back to direct scrape. Reason: {exc}")
+    else:
+        print("No SERPAPI_KEY set; using direct Google Scholar scrape (less reliable from CI).")
+
     fresh_fetch_count = 0
     fallback_count = 0
     missing_without_cache = []
@@ -196,23 +265,28 @@ def get_scholar_citations() -> None:
         title = publication["title"]
         year = publication["year"]
 
-        try:
-            citations = fetch_single_publication_citations(scholar_user_id, pub_id)
+        if key in serpapi_citations:
+            citations = serpapi_citations[key]
             fresh_fetch_count += 1
-            print(f"Found: {title} ({year}) - Citations: {citations}")
-        except Exception as exc:
-            cached = existing_papers.get(key)
-            if isinstance(cached, dict) and "citations" in cached:
-                citations = int(cached["citations"])
-                fallback_count += 1
-                print(
-                    f"Warning: Could not refresh {pub_id}; using cached citations={citations}. "
-                    f"Reason: {exc}"
-                )
-            else:
-                missing_without_cache.append(f"{pub_id} ({title}): {exc}")
-                print(f"Error: Could not fetch {pub_id} and no cache exists. Reason: {exc}")
-                continue
+            print(f"Found (SerpAPI): {title} ({year}) - Citations: {citations}")
+        else:
+            try:
+                citations = fetch_single_publication_citations(scholar_user_id, pub_id)
+                fresh_fetch_count += 1
+                print(f"Found: {title} ({year}) - Citations: {citations}")
+            except Exception as exc:
+                cached = existing_papers.get(key)
+                if isinstance(cached, dict) and "citations" in cached:
+                    citations = int(cached["citations"])
+                    fallback_count += 1
+                    print(
+                        f"Warning: Could not refresh {pub_id}; using cached citations={citations}. "
+                        f"Reason: {exc}"
+                    )
+                else:
+                    missing_without_cache.append(f"{pub_id} ({title}): {exc}")
+                    print(f"Error: Could not fetch {pub_id} and no cache exists. Reason: {exc}")
+                    continue
 
         citation_data["papers"][key] = {
             "title": title,

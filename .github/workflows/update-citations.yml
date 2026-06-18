@@ -50,6 +50,11 @@ jobs:
       - name: Run citation update script
         id: run_citation_update
         shell: bash
+        env:
+          # Optional: enables the reliable SerpAPI Google Scholar source.
+          # Without it the script falls back to scraping scholar.google.com,
+          # which Google frequently blocks from CI runners.
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: |
           set -euo pipefail
           echo "🚀 Running citation update script with retries..."
