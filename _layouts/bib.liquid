@@ -378,11 +378,22 @@
             </a>
           {% endif %}
           {% if entry_has_github_stars_badge %}
+            {% assign repo_meta = site.data.repo_metadata[github_repo] %}
             <a href="https://github.com/{{ github_repo }}" aria-label="GitHub stars link" role="button">
-              <img
-                src="https://img.shields.io/github/stars/{{ github_repo }}?style=social"
-                alt="GitHub stars for {{ github_repo }}"
-              >
+              {% if repo_meta %}
+                <!-- Static badge with the build-time cached star count: shields.io's
+                     live /github/stars/ endpoint intermittently renders "invalid" when
+                     its shared GitHub API rate limit is exhausted. -->
+                <img
+                  src="https://img.shields.io/badge/stars-{{ repo_meta.stargazers_count | default: 0 }}-blue?style=social&logo=github"
+                  alt="GitHub stars for {{ github_repo }}"
+                >
+              {% else %}
+                <img
+                  src="https://img.shields.io/github/stars/{{ github_repo }}?style=social"
+                  alt="GitHub stars for {{ github_repo }}"
+                >
+              {% endif %}
             </a>
           {% endif %}
         </div>
