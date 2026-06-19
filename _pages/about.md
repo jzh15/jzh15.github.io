@@ -29,6 +29,6 @@ latest_posts:
 
 Hello, I am Jian Zhang (张舰), and I also go by Dylan. Over the past two years, I have had impactful collaborations with [Yue Huang](https://huangyue05.github.io/) and [Xinghao Ding](https://informatics.xmu.edu.cn/en/info/1069/1076.htm), through which I developed core research skills and a clear long-term goal: building systems that can perceive, decide, and act in the physical world like humans. During this period, I also had the opportunity to collaborate with [Dr. Zhiwen Fan](https://zhiwenfan.github.io). I believe this direction can fundamentally reshape society. I plan to start my PhD at Texas A&M University in Fall 2026.
 
-My recent projects include SpatialStack, VLM-3R, Thinking in Dynamics, DynamicVerse, Large Spatial Model, and InstantSplat. In my early stage, I focused on faster 3D reconstruction and semantic 3D representation, with some exploration in video generation. I am now increasingly focused on intelligence for embodied systems in the physical world.
+My recent projects include SpatialStack, VLM-3R, Thinking in Dynamics, DynamicVerse, Large Spatial Model, and InstantSplat. In my early stage, I focused on faster 3D reconstruction and semantic 3D representation. I am now increasingly focused on intelligence for embodied systems in the physical world.
 
 I am currently seeking internship opportunities. Feel free to contact me by email.
