@@ -3,13 +3,13 @@
     "jzh15/SpatialStack": {
       "description": "[CVPR 2026]SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning",
       "language": "Python",
-      "stargazers_count": 26,
+      "stargazers_count": 27,
       "forks_count": 2
     },
     "NVlabs/LSM": {
       "description": "[NeurIPS'24] Large Spatial Model: End-to-end Unposed Images to Semantic 3D",
       "language": "Python",
-      "stargazers_count": 233,
+      "stargazers_count": 234,
       "forks_count": 9
     },
     "VITA-Group/VLM-3R": {
