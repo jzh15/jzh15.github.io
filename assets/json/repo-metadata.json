@@ -4,7 +4,7 @@
       "description": "[CVPR 2026]SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning",
       "language": "Python",
       "stargazers_count": 27,
-      "forks_count": 2
+      "forks_count": 3
     },
     "NVlabs/LSM": {
       "description": "[NeurIPS'24] Large Spatial Model: End-to-end Unposed Images to Semantic 3D",
@@ -33,7 +33,7 @@
     "NVlabs/InstantSplat": {
       "description": "InstantSplat: Sparse-view SfM-free Gaussian Splatting in Seconds",
       "language": "Python",
-      "stargazers_count": 1675,
+      "stargazers_count": 1678,
       "forks_count": 152
     }
   }
