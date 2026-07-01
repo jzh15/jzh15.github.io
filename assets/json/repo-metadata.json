@@ -15,26 +15,26 @@
     "VITA-Group/VLM-3R": {
       "description": "[CVPR 2026] VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction",
       "language": "Python",
-      "stargazers_count": 415,
+      "stargazers_count": 417,
       "forks_count": 28
     },
     "Dynamics-X/DynamicVerse": {
       "description": "[NeurIPS 2025]\"DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling\"",
       "language": "Python",
-      "stargazers_count": 101,
+      "stargazers_count": 100,
       "forks_count": 4
     },
     "Dynamics-X/Thinking-in-Dynamics": {
       "description": "[CVPR 2026]\"Thinking in Dynamics: How Multimodal Large Language Models Perceive, Track, and Reason Dynamics in Physical 4D World\"",
       "language": "Python",
-      "stargazers_count": 18,
+      "stargazers_count": 17,
       "forks_count": 1
     },
     "NVlabs/InstantSplat": {
       "description": "InstantSplat: Sparse-view SfM-free Gaussian Splatting in Seconds",
       "language": "Python",
       "stargazers_count": 1682,
-      "forks_count": 152
+      "forks_count": 154
     }
   }
 }
