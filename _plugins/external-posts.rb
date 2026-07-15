@@ -78,9 +78,13 @@ module ExternalPosts
     def fetch_from_urls(site, src)
       src['posts'].each do |post|
         puts "...fetching #{post['url']}"
-        content = fetch_content_from_url(post['url'])
-        content[:published] = parse_published_date(post['published_date'])
-        create_document(site, src['name'], post['url'], content)
+        begin
+          content = fetch_content_from_url(post['url'])
+          content[:published] = parse_published_date(post['published_date'])
+          create_document(site, src['name'], post['url'], content)
+        rescue StandardError => e
+          Jekyll.logger.warn "ExternalPosts", "Skipping #{post['url']} (#{e.class}: #{e.message})"
+        end
       end
     end
 
