@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-14'
+  last_updated: '2026-07-15'
 papers:
   qBNtBsAAAAAJ:2osOgNQ5qMEC:
     citations: 5
@@ -18,10 +18,10 @@ papers:
     title: 'DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling'
     year: '2025'
   qBNtBsAAAAAJ:u-x6o8ySG0sC:
-    citations: 75
+    citations: 76
     title: 'Large spatial model: End-to-end unposed images to semantic 3d'
     year: '2024'
   qBNtBsAAAAAJ:u5HHmVD_uO8C:
-    citations: 318
+    citations: 319
     title: 'Instantsplat: Unbounded sparse-view pose-free gaussian splatting in 40 seconds'
     year: '2024'
