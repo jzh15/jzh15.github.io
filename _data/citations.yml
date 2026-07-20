@@ -1,16 +1,16 @@
 metadata:
-  last_updated: '2026-07-19'
+  last_updated: '2026-07-20'
 papers:
   qBNtBsAAAAAJ:2osOgNQ5qMEC:
     citations: 5
     title: 'Thinking in Dynamics: How Multimodal Large Language Models Perceive, Track, and Reason Dynamics in Physical 4D World'
     year: '2026'
   qBNtBsAAAAAJ:9yKSN-GCB0IC:
-    citations: 3
+    citations: 4
     title: 'SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning'
     year: '2026'
   qBNtBsAAAAAJ:d1gkVwhDpl0C:
-    citations: 122
+    citations: 125
     title: 'VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction'
     year: '2026'
   qBNtBsAAAAAJ:qjMakFHDy7sC:
@@ -18,7 +18,7 @@ papers:
     title: 'DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling'
     year: '2025'
   qBNtBsAAAAAJ:u-x6o8ySG0sC:
-    citations: 76
+    citations: 77
     title: 'Large spatial model: End-to-end unposed images to semantic 3d'
     year: '2024'
   qBNtBsAAAAAJ:u5HHmVD_uO8C:
