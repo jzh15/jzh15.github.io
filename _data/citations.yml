@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-23'
+  last_updated: '2026-07-24'
 papers:
   qBNtBsAAAAAJ:2osOgNQ5qMEC:
     citations: 5
@@ -14,7 +14,7 @@ papers:
     title: 'VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction'
     year: '2026'
   qBNtBsAAAAAJ:qjMakFHDy7sC:
-    citations: 4
+    citations: 3
     title: 'DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling'
     year: '2025'
   qBNtBsAAAAAJ:u-x6o8ySG0sC:
