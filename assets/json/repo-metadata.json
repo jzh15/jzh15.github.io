@@ -3,7 +3,7 @@
     "jzh15/SpatialStack": {
       "description": "[CVPR 2026]SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning",
       "language": "Python",
-      "stargazers_count": 31,
+      "stargazers_count": 32,
       "forks_count": 5
     },
     "NVlabs/LSM": {
@@ -15,7 +15,7 @@
     "VITA-Group/VLM-3R": {
       "description": "[CVPR 2026] VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction",
       "language": "Python",
-      "stargazers_count": 430,
+      "stargazers_count": 431,
       "forks_count": 29
     },
     "Dynamics-X/DynamicVerse": {
@@ -33,7 +33,7 @@
     "NVlabs/InstantSplat": {
       "description": "InstantSplat: Sparse-view SfM-free Gaussian Splatting in Seconds",
       "language": "Python",
-      "stargazers_count": 1689,
+      "stargazers_count": 1690,
       "forks_count": 157
     }
   }
