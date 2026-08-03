@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-08-02'
+  last_updated: '2026-08-03'
 papers:
   qBNtBsAAAAAJ:2osOgNQ5qMEC:
-    citations: 4
+    citations: 6
     title: 'Thinking in Dynamics: How Multimodal Large Language Models Perceive, Track, and Reason Dynamics in Physical 4D World'
     year: '2026'
   qBNtBsAAAAAJ:9yKSN-GCB0IC:
@@ -10,7 +10,7 @@ papers:
     title: 'SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning'
     year: '2026'
   qBNtBsAAAAAJ:d1gkVwhDpl0C:
-    citations: 130
+    citations: 131
     title: 'VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction'
     year: '2026'
   qBNtBsAAAAAJ:qjMakFHDy7sC:
@@ -18,10 +18,10 @@ papers:
     title: 'DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling'
     year: '2025'
   qBNtBsAAAAAJ:u-x6o8ySG0sC:
-    citations: 77
+    citations: 79
     title: 'Large spatial model: End-to-end unposed images to semantic 3d'
     year: '2024'
   qBNtBsAAAAAJ:u5HHmVD_uO8C:
-    citations: 324
+    citations: 328
     title: 'Instantsplat: Unbounded sparse-view pose-free gaussian splatting in 40 seconds'
     year: '2024'
