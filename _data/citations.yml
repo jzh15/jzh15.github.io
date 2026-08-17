@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-16'
+  last_updated: '2026-08-17'
 papers:
   qBNtBsAAAAAJ:2osOgNQ5qMEC:
     citations: 7
@@ -10,7 +10,7 @@ papers:
     title: 'SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning'
     year: '2026'
   qBNtBsAAAAAJ:d1gkVwhDpl0C:
-    citations: 136
+    citations: 137
     title: 'VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction'
     year: '2026'
   qBNtBsAAAAAJ:qjMakFHDy7sC:
@@ -22,6 +22,6 @@ papers:
     title: 'Large spatial model: End-to-end unposed images to semantic 3d'
     year: '2024'
   qBNtBsAAAAAJ:u5HHmVD_uO8C:
-    citations: 340
+    citations: 341
     title: 'Instantsplat: Unbounded sparse-view pose-free gaussian splatting in 40 seconds'
     year: '2024'
