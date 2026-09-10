@@ -3,7 +3,7 @@
     "jzh15/SpatialStack": {
       "description": "[CVPR 2026]SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning",
       "language": "Python",
-      "stargazers_count": 35,
+      "stargazers_count": 36,
       "forks_count": 5
     },
     "NVlabs/LSM": {
@@ -33,7 +33,7 @@
     "NVlabs/InstantSplat": {
       "description": "InstantSplat: Sparse-view SfM-free Gaussian Splatting in Seconds",
       "language": "Python",
-      "stargazers_count": 1701,
+      "stargazers_count": 1704,
       "forks_count": 157
     }
   }
