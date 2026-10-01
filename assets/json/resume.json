@@ -7,9 +7,9 @@
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Xiamen",
-      "countryCode": "CN",
-      "region": "Fujian"
+      "city": "College Station",
+      "countryCode": "US",
+      "region": "TX"
     },
     "profiles": [
       {
@@ -31,17 +31,6 @@
   },
   "work": [
     {
-      "name": "PHAI Lab, Texas A&M University",
-      "position": "Remote Research Assistant",
-      "url": "https://phai-lab.github.io/",
-      "location": "College Station, TX, USA",
-      "logo": "/assets/img/logos/TAMU.png",
-      "startDate": "2025-05-01",
-      "endDate": "2025-08-01",
-      "summary": "Remote Research Assistant on 3D vision and embodied intelligence.",
-      "highlights": ["Advisor: Prof. Zhiwen Fan."]
-    },
-    {
       "name": "VITA Group, University of Texas at Austin",
       "position": "Remote Research Assistant",
       "url": "https://vita-group.github.io/group.html",
@@ -56,6 +45,21 @@
   "volunteer": [],
   "education": [
     {
+      "institution": "Texas A&M University",
+      "location": "College Station, TX, USA",
+      "url": "https://www.tamu.edu/",
+      "logo": "/assets/img/logos/TAMU.png",
+      "area": "Computer Engineering",
+      "studyType": "Ph.D.",
+      "startDate": "2026-09-01",
+      "endDate": "",
+      "score": "",
+      "highlights": [
+        "Advisor: Prof. <a href=\"https://zhiwenfan.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Zhiwen Fan</a>."
+      ],
+      "courses": []
+    },
+    {
       "institution": "Xiamen University",
       "location": "Xiamen, China",
       "url": "https://www.xmu.edu.cn/",
@@ -63,7 +67,7 @@
       "area": "Information & Communication Engineering",
       "studyType": "M.S.",
       "startDate": "2023-09-01",
-      "endDate": "2026-07-01",
+      "endDate": "2026-06-01",
       "score": "",
       "highlights": [
         "Advisors: Prof. <a href=\"https://huangyue05.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Yue Huang</a> & <a href=\"https://informatics.xmu.edu.cn/en/info/1069/1076.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Xinghao Ding</a>."
@@ -78,7 +82,7 @@
       "area": "Data Science and Big Data Technology",
       "studyType": "B.S.",
       "startDate": "2019-09-01",
-      "endDate": "2023-07-01",
+      "endDate": "2023-06-01",
       "score": "",
       "highlights": [
         "Advisor: Prof. <a href=\"https://teacher.ncu.edu.cn/publish/091987/\" target=\"_blank\" rel=\"noopener noreferrer\">Li Zhu</a>."
