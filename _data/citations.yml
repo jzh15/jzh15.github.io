@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-10-01'
+  last_updated: '2026-10-02'
 papers:
   qBNtBsAAAAAJ:2osOgNQ5qMEC:
     citations: 8
@@ -19,9 +19,9 @@ papers:
     year: '2025'
   qBNtBsAAAAAJ:u-x6o8ySG0sC:
     citations: 90
-    title: 'Large spatial model: End-to-end unposed images to semantic 3d'
+    title: 'Large Spatial Model: End-to-end Unposed Images to Semantic 3D'
     year: '2024'
   qBNtBsAAAAAJ:u5HHmVD_uO8C:
     citations: 361
-    title: 'Instantsplat: Unbounded sparse-view pose-free gaussian splatting in 40 seconds'
+    title: 'InstantSplat: Sparse-view Gaussian Splatting in Seconds'
     year: '2024'
