@@ -9,13 +9,13 @@
     "NVlabs/LSM": {
       "description": "[NeurIPS'24] Large Spatial Model: End-to-end Unposed Images to Semantic 3D",
       "language": "Python",
-      "stargazers_count": 240,
+      "stargazers_count": 241,
       "forks_count": 12
     },
     "VITA-Group/VLM-3R": {
       "description": "[CVPR 2026] VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction",
       "language": "Python",
-      "stargazers_count": 449,
+      "stargazers_count": 450,
       "forks_count": 29
     },
     "Dynamics-X/DynamicVerse": {
@@ -33,7 +33,7 @@
     "NVlabs/InstantSplat": {
       "description": "InstantSplat: Sparse-view SfM-free Gaussian Splatting in Seconds",
       "language": "Python",
-      "stargazers_count": 1710,
+      "stargazers_count": 1711,
       "forks_count": 156
     }
   }
