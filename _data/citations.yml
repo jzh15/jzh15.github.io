@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-10-25'
+  last_updated: '2026-10-26'
 papers:
   qBNtBsAAAAAJ:2osOgNQ5qMEC:
     citations: 9
@@ -10,7 +10,7 @@ papers:
     title: 'SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning'
     year: '2026'
   qBNtBsAAAAAJ:d1gkVwhDpl0C:
-    citations: 185
+    citations: 184
     title: 'VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction'
     year: '2026'
   qBNtBsAAAAAJ:qjMakFHDy7sC:
@@ -18,7 +18,7 @@ papers:
     title: 'DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling'
     year: '2025'
   qBNtBsAAAAAJ:u-x6o8ySG0sC:
-    citations: 93
+    citations: 94
     title: 'Large Spatial Model: End-to-end Unposed Images to Semantic 3D'
     year: '2024'
   qBNtBsAAAAAJ:u5HHmVD_uO8C:
