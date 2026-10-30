@@ -4,7 +4,7 @@
       "description": "[CVPR 2026]SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning",
       "language": "Python",
       "stargazers_count": 40,
-      "forks_count": 5
+      "forks_count": 6
     },
     "NVlabs/LSM": {
       "description": "[NeurIPS'24] Large Spatial Model: End-to-end Unposed Images to Semantic 3D",
