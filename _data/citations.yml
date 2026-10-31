@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-10-30'
+  last_updated: '2026-10-31'
 papers:
   qBNtBsAAAAAJ:2osOgNQ5qMEC:
     citations: 9
@@ -18,7 +18,7 @@ papers:
     title: 'DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling'
     year: '2025'
   qBNtBsAAAAAJ:u-x6o8ySG0sC:
-    citations: 94
+    citations: 95
     title: 'Large Spatial Model: End-to-end Unposed Images to Semantic 3D'
     year: '2024'
   qBNtBsAAAAAJ:u5HHmVD_uO8C:
